@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id "com.diffplug.gradle.spotless" version "3.27.2"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.0'
+
+    testImplementation 'junit:junit:4.13'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.6.0'
+
+    testImplementation 'org.assertj:assertj-core:3.15.0';
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+spotless {
+    java {
+        googleJavaFormat()
+    }
+}
