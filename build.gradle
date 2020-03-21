@@ -13,11 +13,15 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.6.0'
 
-    testImplementation 'org.assertj:assertj-core:3.15.0';
+    testImplementation 'org.assertj:assertj-core:3.15.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform{
+        includeTags "TestTagged"
+    }
     testLogging {
         events "passed", "skipped", "failed"
     }
