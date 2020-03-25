@@ -11,7 +11,7 @@ import java.util.InputMismatchException;
 
 import static org.junit.Assert.*;
 
-public class testTriangleConstructor {
+public class TestTriangleConstructor {
 
 
     @Tag("TestTagged")

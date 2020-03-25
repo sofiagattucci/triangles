@@ -1,6 +1,10 @@
 plugins {
     id 'java'
     id "com.diffplug.gradle.spotless" version "3.27.2"
+    id 'org.unbroken-dome.test-sets' version '2.2.1'
+}
+testSets {
+    integrationTest
 }
 
 repositories {
@@ -19,8 +23,11 @@ dependencies {
 }
 
 test {
+    filter{
+        includeTestsMatching "*Integer"
+    }
     useJUnitPlatform{
-        includeTags "TestTagged"
+        //includeTags "TestTagged"
     }
     testLogging {
         events "passed", "skipped", "failed"
