@@ -15,6 +15,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 
+@ExtendWith(OddTest.class)
 public class TestTriangle {
     ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     InputStream backupInputStream = System.in;

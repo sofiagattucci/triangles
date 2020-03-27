@@ -5,3 +5,5 @@ Usata tale regola in un metodo prametrizzato della classe TestTriangle.
 Fatto un po' di ordine al codice.
 Provati i filtri di Gradle.
 Ho iniziato a guardare per scrivere l'estensione per eseguire i test dispari ma non l'ho implementata.
+# Assignment 4 revisione
+Aggiunta l'estensione per eseguire solo i test dispari e provata sulla classe TestTriangle
