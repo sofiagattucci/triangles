@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.di.vec.extensions.TestOddExecExtension" tests="7" skipped="3" failures="0" errors="0" timestamp="2020-04-02T14:38:00" hostname="sofia-Lenovo-Z50-70" time="0.073">
+  <properties/>
+  <testcase name="testParam(String)[1]" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.056"/>
+  <testcase name="testParam(String)[2]" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testParam(String)[3]" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.001"/>
+  <testcase name="test4()" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="test5()" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.002"/>
+  <testcase name="test6()" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="test7()" classname="it.unimi.di.vec.extensions.TestOddExecExtension" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
