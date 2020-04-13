@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.di.vec.extensions.TestSystemOutputExtension" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-04-13T08:01:04" hostname="sofia-Lenovo-Z50-70" time="0.135">
+  <properties/>
+  <testcase name="testOutputAnnotationParametrized(String, ByteArrayOutputStream)[1]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.104"/>
+  <testcase name="testOutputAnnotationParametrized(String, ByteArrayOutputStream)[2]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.002"/>
+  <testcase name="testOutputAnnotationParametrized(String, ByteArrayOutputStream)[3]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.001"/>
+  <testcase name="testOutputSimple(ByteArrayOutputStream)" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.002"/>
+  <testcase name="testOutputParameterized(String, ByteArrayOutputStream)[1]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.002"/>
+  <testcase name="testOutputParameterized(String, ByteArrayOutputStream)[2]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.002"/>
+  <testcase name="testOutputParameterized(String, ByteArrayOutputStream)[3]" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.002"/>
+  <testcase name="testOutputAnnotation(ByteArrayOutputStream)" classname="it.unimi.di.vec.extensions.TestSystemOutputExtension" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

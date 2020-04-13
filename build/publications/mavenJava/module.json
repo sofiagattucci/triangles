@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.1",
-      "buildId": "y72akc5fovdztiizpp7vgiiheq"
+      "buildId": "kecyjlvp3nbarnduiczk5ljbqe"
     }
   },
   "variants": [
@@ -28,11 +28,11 @@
         {
           "name": "extensions-1.0.jar",
           "url": "extensions-1.0.jar",
-          "size": 2683,
-          "sha512": "af69f14515d3f7fc270556bfb6f2787cc9e9801c19da670c5025d3a3e59ff1742b887b36af031ac2b68d6336f6822894509a08ea094b48e65eb624509756c432",
-          "sha256": "957ef4457c360c7457bf627d4022e06909abca85f2039d55141ef0c7322f056c",
-          "sha1": "e9f4c90b561b3a8a066d08557de9f5915ffe5f10",
-          "md5": "4d766a2da14cd6d6f5f68e0483d1e49f"
+          "size": 6539,
+          "sha512": "c2cc05e46b39f3aa31ef584474a16aff32b62264615c58b252697aa4f7369505ef6ac15c7bf04acfb85cf013d55409dae8d13ca5f5b2c875c156b2c5f0e6cd6d",
+          "sha256": "a3ddc894e0d0abd3bc76c1bf91dcb4ee7968a8fe44e50720f24f4e0c11d8ab84",
+          "sha1": "a0cf61f3c5d4ffd45f099d95a4d639df843a5d5d",
+          "md5": "40261a4bf022eaf3e46b5092ac742adf"
         }
       ]
     },
@@ -65,11 +65,11 @@
         {
           "name": "extensions-1.0.jar",
           "url": "extensions-1.0.jar",
-          "size": 2683,
-          "sha512": "af69f14515d3f7fc270556bfb6f2787cc9e9801c19da670c5025d3a3e59ff1742b887b36af031ac2b68d6336f6822894509a08ea094b48e65eb624509756c432",
-          "sha256": "957ef4457c360c7457bf627d4022e06909abca85f2039d55141ef0c7322f056c",
-          "sha1": "e9f4c90b561b3a8a066d08557de9f5915ffe5f10",
-          "md5": "4d766a2da14cd6d6f5f68e0483d1e49f"
+          "size": 6539,
+          "sha512": "c2cc05e46b39f3aa31ef584474a16aff32b62264615c58b252697aa4f7369505ef6ac15c7bf04acfb85cf013d55409dae8d13ca5f5b2c875c156b2c5f0e6cd6d",
+          "sha256": "a3ddc894e0d0abd3bc76c1bf91dcb4ee7968a8fe44e50720f24f4e0c11d8ab84",
+          "sha1": "a0cf61f3c5d4ffd45f099d95a4d639df843a5d5d",
+          "md5": "40261a4bf022eaf3e46b5092ac742adf"
         }
       ]
     }
