@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.kata.TestBirthDayService" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-04-19T20:33:02" hostname="sofia-Lenovo-Z50-70" time="0.483">
+  <properties/>
+  <testcase name="employeeTest()" classname="it.unimi.kata.TestBirthDayService" time="0.463"/>
+  <testcase name="emailServiceTest()" classname="it.unimi.kata.TestBirthDayService" time="0.011"/>
+  <testcase name="employeeRepositoryTest()" classname="it.unimi.kata.TestBirthDayService" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
