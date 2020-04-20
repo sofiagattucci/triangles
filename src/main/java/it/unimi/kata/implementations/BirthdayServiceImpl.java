@@ -5,6 +5,7 @@ import it.unimi.kata.interfaces.EmailService;
 import it.unimi.kata.interfaces.Employee;
 import it.unimi.kata.interfaces.EmployeeRepository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class BirthdayServiceImpl implements BirthdayService {
@@ -27,6 +28,9 @@ public class BirthdayServiceImpl implements BirthdayService {
     @Override
     public void sendGreetings(int month, int day) {
         employeesBornOn = employeeRepository.findEmployeesBornOn(month, day);
+        if(!LocalDate.now().isLeapYear()){
+            employeesBornOn.addAll(employeeRepository.findEmployeesBornOn(2, 29));
+        }
         for (Employee emp : employeesBornOn)
             emailService.sendEmail(emp.getName());
     }

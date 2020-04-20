@@ -24,6 +24,8 @@ public class TestBirthDayService {
         listOfEmployees = new ArrayList<>();
         createEmployee("Mario", "Bros", LocalDate.of(1996, 12, 29), "mario.bros@mail.it");
         createEmployee("Luigi", "Bros", LocalDate.of(1996, 12, 29), "luigi.bros@mail.it");
+        createEmployee("Donkey", "Kong", LocalDate.of(1996, 2, 29), "donkey.kong@mail.it");
+        createEmployee("Bowser", "Koopa", LocalDate.of(1994, 2, 28), "bowser.koopa@mail.it");
         createEmployee("Peach", "ToadStool", LocalDate.of(1994, 12, 3), "peach.toadstool@mail.it");
         createEmployee("Daisy", "ToadStool", LocalDate.of(1994, 12, 3), "daisy.toadstool@mail.it");
         er = createEmployeeRepository();
@@ -44,8 +46,15 @@ public class TestBirthDayService {
 
     @Test
     public void emailServiceTest(){
-        bs.sendGreetings(12, 3);
+        //bs.sendGreetings(12, 3);
         assertThat(bs.getEmailService().sendEmail("Daisy")).isEqualTo(ems.sendEmail("Daisy"));
+    }
+
+    //2020 bisestile quindi in quest'anno vengono spediti il 29 febbraio...
+    @Test
+    public void leapYearOrNotTest() {
+        bs.sendGreetings(2, 29);
+        assertThat(bs.getEmployeesBornOn()).isNotNull();
     }
 
 
@@ -61,7 +70,9 @@ public class TestBirthDayService {
     private EmployeeRepositoryImpl createEmployeeRepository(){
         EmployeeRepositoryImpl empRep = mock(EmployeeRepositoryImpl.class);
         when(empRep.findEmployeesBornOn(12, 29)).thenReturn(listOfEmployees.subList(0,2));
-        when(empRep.findEmployeesBornOn(12, 3)).thenReturn(listOfEmployees.subList(2,4));
+        when(empRep.findEmployeesBornOn(12, 3)).thenReturn(listOfEmployees.subList(4,6));
+        when(empRep.findEmployeesBornOn(2, 29)).thenReturn(LocalDate.now().isLeapYear() ? (listOfEmployees.subList(2,3)): null);
+        when(empRep.findEmployeesBornOn(2, 28)).thenReturn(LocalDate.now().isLeapYear() ? listOfEmployees.subList(3,4) : listOfEmployees.subList(2,4));
         return empRep;
     }
 
