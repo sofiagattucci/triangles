@@ -1,0 +1,33 @@
+image: gradle:jdk11
+
+stages:
+  - build
+  - test
+
+before_script:
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
+build:
+  script: gradle --build-cache assemble
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - build
+      - .gradle
+
+
+test:
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: pull
+    paths:
+      - build
+      - .gradle
+  artifacts:
+    paths:
+      - build/reports/jacoco/
+    expire_in: 1 week
+  script:
+    - gradle test jacocoTestReport
+

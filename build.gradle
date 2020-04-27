@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id "com.diffplug.gradle.spotless" version "3.27.2"
     id 'org.unbroken-dome.test-sets' version '2.2.1'
+    id 'jacoco'
 }
 testSets {
     integrationTest
@@ -26,8 +27,10 @@ dependencies {
 }
 
 test {
+    finalizedBy(jacocoTestReport)
+
     filter{
-        includeTestsMatching "*Integer"
+        //includeTestsMatching "*Integer"
     }
     useJUnitPlatform{
         //includeTags "TestTagged"
@@ -36,6 +39,23 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+
+def printJacocoCoverage(String xpath) {
+    def jacocoCoverage = new ByteArrayOutputStream()
+    exec {
+        commandLine 'xmllint','-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html'
+        standardOutput = jacocoCoverage
+        ignoreExitValue true
+    }
+    return jacocoCoverage.toString()
+}
+jacocoTestReport {
+    doLast {
+        print "INSTRUCTIONS: " + printJacocoCoverage("3")
+        println " BRANCHES: " + printJacocoCoverage("5")
+    }
+}
+
 
 spotless {
     java {
