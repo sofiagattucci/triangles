@@ -7,13 +7,14 @@ plugins {
 testSets {
     integrationTest
 }
-authToken = "jp_cfbtoslbdr50e4pp4hljlsfohu"
 repositories {
     mavenLocal()
     mavenCentral()
     maven {
         url "https://jitpack.io"
-        credentials { username authToken }
+        credentials {
+            username "jp_cfbtoslbdr50e4pp4hljlsfohu"
+        }
     }
 }
 
