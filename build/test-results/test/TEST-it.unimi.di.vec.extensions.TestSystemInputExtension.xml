@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.di.vec.extensions.TestSystemInputExtension" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-04-29T15:54:32" hostname="sofia-Lenovo-Z50-70" time="0.028">
+  <properties/>
+  <testcase name="testInput(String, WriteOnStdIn)[1]" classname="it.unimi.di.vec.extensions.TestSystemInputExtension" time="0.01"/>
+  <testcase name="testInput(String, WriteOnStdIn)[2]" classname="it.unimi.di.vec.extensions.TestSystemInputExtension" time="0.002"/>
+  <testcase name="testInput(String, WriteOnStdIn)[3]" classname="it.unimi.di.vec.extensions.TestSystemInputExtension" time="0.002"/>
+  <testcase name="testInputAnnotation()" classname="it.unimi.di.vec.extensions.TestSystemInputExtension" time="0.002"/>
+  <testcase name="testInputInjection(WriteOnStdIn)" classname="it.unimi.di.vec.extensions.TestSystemInputExtension" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
