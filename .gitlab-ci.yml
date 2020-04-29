@@ -24,45 +24,11 @@ test:
       junit: build/test-results/test/TEST-*.xml
     expire_in: 1 week
   script:
-    - gradle test jacocoTestReport
     - gradle publishToMavenLocal
+    - gradle test jacocoTestReport
   cache:
     key: "$CI_COMMIT_REF_NAME"
     policy: pull
     paths:
       - build
       - .gradle
-#image: gradle:jdk11
-#
-#before_script:
-#  - export GRADLE_USER_HOME=`pwd`/.gradle
-#
-#build:
-#  stage: build
-#  script: gradle --build-cache assemble
-#  cache:
-#    key: "$CI_COMMIT_REF_NAME"
-#    policy: push
-#    paths:
-#      - build
-#      - .gradle
-#
-#test:
-#  stage: test
-#  artifacts:
-#    name: "$CI_JOB_NAME"
-#    paths:
-#      - cat build/reports/jacoco/test/html/index.html
-#      -  <img alt="coverage report" src="https://gitlab.com/priraucci/triangles/badges/assignment11/coverage.svg" />
-#      - build/reports/jacoco/test/html
-#      - build/reports/tests/test
-#    reports:
-#      junit: build/test-results/test/TEST-*.xml
-#    expire_in: 1 week
-#  script: test jacocoTestReport
-#  cache:
-#    key: "$CI_COMMIT_REF_NAME"
-#    policy: pull
-#    paths:
-#      - build
-#      - .gradle

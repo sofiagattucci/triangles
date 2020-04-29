@@ -47,19 +47,22 @@ test {
     }
 }
 
-def printJacocoCoverage(String xpath) {
-    def jacocoCoverage = new ByteArrayOutputStream()
-    exec {
-        commandLine 'xmllint','-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html'
-        standardOutput = jacocoCoverage
-        ignoreExitValue true
-    }
-    return jacocoCoverage.toString()
-}
+//def printJacocoCoverage(String xpath) {
+//    def jacocoCoverage = new ByteArrayOutputStream()
+//    exec {
+//        commandLine 'xmllint','-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html'
+//        standardOutput = jacocoCoverage
+//        ignoreExitValue true
+//    }
+//    return jacocoCoverage.toString()
+//}
 jacocoTestReport {
-    doLast {
-        print "INSTRUCTIONS: " + printJacocoCoverage("3")
-        println " BRANCHES: " + printJacocoCoverage("5")
+//    doLast {
+//        print "INSTRUCTIONS: " + printJacocoCoverage("3")
+//        println " BRANCHES: " + printJacocoCoverage("5")
+//    }
+    reports {
+        html.destination file("build/reports/jacoco/test/html/index.html")
     }
 }
 
