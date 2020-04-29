@@ -30,7 +30,7 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
 
-    implementation 'com.gitlab.sofiagattucci:triangles:0669be9d'
+    implementation 'com.gitlab.sofiagattucci:triangles:assignment5-SNAPSHOT'
 }
 
 test {
