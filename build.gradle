@@ -50,7 +50,7 @@ test {
 //def printJacocoCoverage(String xpath) {
 //    def jacocoCoverage = new ByteArrayOutputStream()
 //    exec {
-//        commandLine 'xmllint','-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html'
+//        commandLine '-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html/index.html'
 //        standardOutput = jacocoCoverage
 //        ignoreExitValue true
 //    }
@@ -62,7 +62,9 @@ jacocoTestReport {
 //        println " BRANCHES: " + printJacocoCoverage("5")
 //    }
     reports {
-        html.destination file("build/reports/jacoco/test/html/index.html")
+//        xml.enabled false
+//        csv.enabled false
+        html.destination file("build/jacocoHtml")
     }
 }
 

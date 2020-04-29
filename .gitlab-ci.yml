@@ -24,8 +24,8 @@ test:
       junit: build/test-results/test/TEST-*.xml
     expire_in: 1 week
   script:
-    - gradle publishToMavenLocal
     - gradle test jacocoTestReport
+    - gradle publishToMavenLocal
   cache:
     key: "$CI_COMMIT_REF_NAME"
     policy: pull
