@@ -11,10 +11,14 @@ testSets {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven {
+        url "https://jitpack.io"
+        credentials { username authToken }
+    }
 }
 
 dependencies {
-    testImplementation 'it.unimi.di.vec:extensions:1.0'
+    //testImplementation 'it.unimi.di.vec:extensions:1.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.0'
 
@@ -24,6 +28,8 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.15.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
+
+    implementation 'com.gitlab.sofiagattucci:triangles:0669be9d'
 }
 
 test {
