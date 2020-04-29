@@ -25,11 +25,7 @@ test:
     expire_in: 1 week
   script:
     - gradle test jacocoTestReport
-    - apk add git
-    - apk upgrade
-    - git checkout assignment5
-    - gradle publishToMavenLocal
-    - git checkout assignment9
+#    - gradle publishToMavenLocal
   cache:
     key: "$CI_COMMIT_REF_NAME"
     policy: pull
