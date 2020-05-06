@@ -49,11 +49,7 @@ public class TestEmployee {
     }
     
     private Employee setUpEmployee(String name, String surname, LocalDate birthday, String email){
-        Employee emp = mock(EmployeeImpl.class);
-        when(emp.getName()).thenReturn(name);
-        when(emp.getSurname()).thenReturn(surname);
-        when(emp.getBirthdayDate()).thenReturn(birthday);
-        when(emp.getEmail()).thenReturn(email);
+        Employee emp = new EmployeeImpl(name, surname, birthday, email);
         listOfEmployees.add(emp);
         return emp;
     }

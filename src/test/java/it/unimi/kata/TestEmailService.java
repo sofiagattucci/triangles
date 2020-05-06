@@ -10,47 +10,49 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.*;
 
 public class TestEmailService {
 
     EmailServiceImpl es;
     Employee emp;
+    String object = "Happy Birthday!";
+    String text = "Happy Birthday, dear ";
 
     @BeforeEach
     public void setUp(){
-        String completeString;
-        es = mock(EmailServiceImpl.class);
+        es = new EmailServiceImpl("sofia.gattucci@mail.it");
         emp = setUpEmployee("Mario", "Bros", LocalDate.of(1996, 12, 29), "mario.bros@mail.it");
-        when(es.getSubject()).thenReturn("Happy Birthday! ");
-        when(es.getText()).thenReturn("Happy Birthday, dear ");
-        completeString = "Happy Birthday! Happy Birthday, dear "+ emp.getName()+"!";
-        when(es.sendEmail(emp.getName())).thenReturn(completeString);
+        es.sendEmail(emp.getEmail(), object, text+ emp.getName()+"!");
     }
 
-    @Test
-    public void correctSubject(){
-        assertThat(es.getSubject()).isEqualTo("Happy Birthday! ");
-    }
+//    @Test
+//    public void correctEmailSend(){
+//        verify(es).sendEmail(emp.getEmail(), object, text + emp.getName()+"!");
+//    }
 
     @Test
     public void correctText(){
-        assertThat(es.getText()).isEqualTo("Happy Birthday, dear ");
+        es.sendEmail(emp.getEmail(), object, text+ emp.getName()+"!");
+        assertThat(es.getText()).isEqualTo(text + emp.getName() + "!");
     }
 
     @Test
-    public void correctEmailText(){
-        assertThat(es.sendEmail(emp.getName())).isEqualTo(es.getSubject() + es.getText() + emp.getName() + "!");
+    public void correctObject(){
+        es.sendEmail(emp.getEmail(), object, text+ emp.getName()+"!");
+        assertThat(es.getObject()).isEqualTo(object);
+    }
+
+    @Test
+    public void correctSender(){
+        es.sendEmail(emp.getEmail(), object, text+ emp.getName()+"!");
+        assertThat(es.getEmailFrom()).isEqualTo("sofia.gattucci@mail.it");
     }
 
 
     private Employee setUpEmployee(String name, String surname, LocalDate birthday, String email){
-        Employee emp = mock(EmployeeImpl.class);
-        when(emp.getName()).thenReturn(name);
-        when(emp.getSurname()).thenReturn(surname);
-        when(emp.getBirthdayDate()).thenReturn(birthday);
-        when(emp.getEmail()).thenReturn(email);
+        Employee emp = new EmployeeImpl(name, surname, birthday, email);
         return emp;
     }
 }

@@ -19,6 +19,8 @@ public class BirthdayServiceImpl implements BirthdayService {
     List<Employee> employeesBornOn;
     EmployeeRepository employeeRepository;
     EmailService emailService;
+    String object = "Happy Birthday!";
+    String text = "Happy Birthday, dear ";
 
     public BirthdayServiceImpl(EmployeeRepository er, EmailService es){
         employeeRepository = er;
@@ -32,6 +34,6 @@ public class BirthdayServiceImpl implements BirthdayService {
             employeesBornOn.addAll(employeeRepository.findEmployeesBornOn(2, 29));
         }
         for (Employee emp : employeesBornOn)
-            emailService.sendEmail(emp.getName());
+            emailService.sendEmail(emp.getEmail(), object, text + emp.getName() + "!");
     }
 }

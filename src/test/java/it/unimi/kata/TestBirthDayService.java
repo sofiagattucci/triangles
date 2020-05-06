@@ -2,6 +2,7 @@ package it.unimi.kata;
 
 import it.unimi.kata.implementations.*;
 import it.unimi.kata.interfaces.*;
+import org.assertj.core.groups.Tuple;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -18,6 +19,8 @@ public class TestBirthDayService {
     List<Employee> listOfEmployees;
     EmailServiceImpl ems;
     EmployeeRepositoryImpl er;
+    String object = "Happy Birthday!";
+    String text = "Happy Birthday, dear ";
 
     @BeforeEach
     public void setUp(){
@@ -36,7 +39,9 @@ public class TestBirthDayService {
     @Test
     public void employeeTest(){
         bs.sendGreetings(12, 29);
-        assertThat(bs.getEmployeesBornOn()).isEqualTo(er.findEmployeesBornOn(12, 29));
+        assertThat(bs.getEmployeesBornOn())
+                .extracting("name", "surname")
+                .contains(Tuple.tuple("Mario", "Bros"));
     }
 
     @Test
@@ -46,8 +51,9 @@ public class TestBirthDayService {
 
     @Test
     public void emailServiceTest(){
-        //bs.sendGreetings(12, 3);
-        assertThat(bs.getEmailService().sendEmail("Daisy")).isEqualTo(ems.sendEmail("Daisy"));
+        bs.sendGreetings(12, 3);
+        //assertThat(bs.getEmailService().sendEmail("Daisy")).isEqualTo(ems.sendEmail("Daisy"));
+        assertThat(bs.getEmailService().getEmailFrom()).isEqualTo(ems.getEmailFrom());
     }
 
     //2020 bisestile quindi in quest'anno vengono spediti il 29 febbraio...
@@ -78,7 +84,7 @@ public class TestBirthDayService {
 
     private EmailServiceImpl createEmailService(){
         EmailServiceImpl ems = mock(EmailServiceImpl.class);
-        when(ems.getSubject()).thenReturn("Happy Birthday!");
+        when(ems.getObject()).thenReturn("Happy Birthday!");
         when(ems.getText()).thenReturn("Happy Birthday, dear");
         return ems;
 
