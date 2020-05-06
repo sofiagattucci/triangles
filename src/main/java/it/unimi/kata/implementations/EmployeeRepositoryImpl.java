@@ -1,5 +1,7 @@
 package it.unimi.kata.implementations;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import it.unimi.kata.interfaces.Employee;
 import it.unimi.kata.interfaces.EmployeeRepository;
 
@@ -19,7 +21,8 @@ public class EmployeeRepositoryImpl implements EmployeeRepository {
     List<Employee>  employeesBornOn;
     String fileRepoPath;
 
-    public EmployeeRepositoryImpl(String fileRepoPath) throws IOException {
+    @Inject
+    public EmployeeRepositoryImpl(@Named("path") String fileRepoPath) throws IOException {
         this.fileRepoPath = fileRepoPath;
         employeesBornOn = new ArrayList<>();
         employees = new ArrayList<>();

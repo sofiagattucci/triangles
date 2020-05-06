@@ -26,7 +26,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2fabcae-482b-4919-91a3-79bbb9c612b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/repo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -37,31 +36,21 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/BirthdayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/BirthdayServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/EmailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/EmailServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/EmployeeRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/implementations/EmployeeRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/interfaces/EmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/it/unimi/kata/interfaces/EmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestBirthDayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestBirthDayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmployee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmployeeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/it/unimi/kata/TestEmployeeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/it.unimi.kata.TestBirthDayService.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/it.unimi.kata.TestBirthDayService.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/it.unimi.kata.TestBirthDayService.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/it.unimi.kata.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/it.unimi.kata.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-it.unimi.kata.TestBirthDayService.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-it.unimi.kata.TestBirthDayService.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-it.unimi.kata.TestBirthDayService.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/BirthdayServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/BirthdayServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/EmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/EmailServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/EmployeeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/kata/implementations/EmployeeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/kata/interfaces/EmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/kata/interfaces/EmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestBirthDayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestBirthDayService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/kata/TestEmployeeRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +121,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="findjar.last.used.dir" value="$USER_HOME$/Scaricati" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Scaricati/javax.mail.jar!/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.40114942" />
@@ -151,13 +140,25 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestBirthDayService">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="triangles.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.TestBDSInjection">
+    <configuration name="TestBDSInjection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;it.unimi.kata.TestBDSInjection&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="TestBirthDayService" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -236,19 +237,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Gradle.TestEmployeeRepository" />
       <item itemvalue="Gradle.TestEmployee" />
       <item itemvalue="Gradle.TestEmailService" />
       <item itemvalue="Gradle.TestBirthDayService" />
+      <item itemvalue="Gradle.TestBDSInjection" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestBDSInjection" />
         <item itemvalue="Gradle.TestBirthDayService" />
         <item itemvalue="Gradle.TestEmailService" />
         <item itemvalue="Gradle.TestEmployee" />
         <item itemvalue="Gradle.TestEmployeeRepository" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -343,10 +344,10 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="595" y="233" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1586934283910" />
-    <state x="769" y="228" width="382" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1588665955046">
+    <state x="769" y="228" width="382" height="588" key="#com.intellij.ide.util.MemberChooser" timestamp="1588784445681">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="769" y="228" width="382" height="588" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1588665955046" />
+    <state x="769" y="228" width="382" height="588" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1044@0.0.1920.1044" timestamp="1588784445681" />
     <state x="693" y="300" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587308910247">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
@@ -379,22 +380,22 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state x="744" y="278" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1588664341029" />
-    <state width="1874" height="241" key="GridCell.Tab.0.bottom" timestamp="1588757827006">
+    <state width="1874" height="241" key="GridCell.Tab.0.bottom" timestamp="1588785166628">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1588757827006" />
-    <state width="1874" height="241" key="GridCell.Tab.0.center" timestamp="1588757827006">
+    <state width="1874" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1044@0.0.1920.1044" timestamp="1588785166628" />
+    <state width="1874" height="241" key="GridCell.Tab.0.center" timestamp="1588785166627">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="241" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1588757827006" />
-    <state width="1874" height="241" key="GridCell.Tab.0.left" timestamp="1588757827005">
+    <state width="1874" height="241" key="GridCell.Tab.0.center/0.0.1920.1044@0.0.1920.1044" timestamp="1588785166627" />
+    <state width="1874" height="241" key="GridCell.Tab.0.left" timestamp="1588785166627">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="241" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1588757827005" />
-    <state width="1874" height="241" key="GridCell.Tab.0.right" timestamp="1588757827006">
+    <state width="1874" height="241" key="GridCell.Tab.0.left/0.0.1920.1044@0.0.1920.1044" timestamp="1588785166627" />
+    <state width="1874" height="241" key="GridCell.Tab.0.right" timestamp="1588785166628">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state width="1874" height="241" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1588757827006" />
+    <state width="1874" height="241" key="GridCell.Tab.0.right/0.0.1920.1044@0.0.1920.1044" timestamp="1588785166628" />
     <state width="1874" height="340" key="GridCell.Tab.1.bottom" timestamp="1588666554378">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>

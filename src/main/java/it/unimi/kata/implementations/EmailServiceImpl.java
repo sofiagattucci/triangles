@@ -1,5 +1,7 @@
 package it.unimi.kata.implementations;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import it.unimi.kata.interfaces.EmailService;
 import it.unimi.kata.interfaces.Employee;
 
@@ -36,7 +38,8 @@ public class EmailServiceImpl implements EmailService {
     String object;
     String text;
 
-    public EmailServiceImpl(String emailFrom){
+    @Inject
+    public EmailServiceImpl(@Named("emailFrom") String emailFrom){
         this.emailFrom = emailFrom;
     }
 

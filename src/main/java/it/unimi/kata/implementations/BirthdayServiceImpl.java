@@ -1,5 +1,6 @@
 package it.unimi.kata.implementations;
 
+import com.google.inject.Inject;
 import it.unimi.kata.interfaces.BirthdayService;
 import it.unimi.kata.interfaces.EmailService;
 import it.unimi.kata.interfaces.Employee;
@@ -22,6 +23,7 @@ public class BirthdayServiceImpl implements BirthdayService {
     String object = "Happy Birthday!";
     String text = "Happy Birthday, dear ";
 
+    @Inject
     public BirthdayServiceImpl(EmployeeRepository er, EmailService es){
         employeeRepository = er;
         emailService = es;
