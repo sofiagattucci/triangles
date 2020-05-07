@@ -16,8 +16,8 @@ import static org.mockito.Mockito.mock;
 public class Main{
 
     public static void main(String[] args) throws IOException {
-        BirthdayService birthdayService = Guice.createInjector(new BDSModule()).getInstance(BirthdayServiceImpl.class);
+//        BirthdayService birthdayService = Guice.createInjector(new BDSModule()).getInstance(BirthdayServiceImpl.class);
 
-        birthdayService.sendGreetings(LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth());
+//        birthdayService.sendGreetings(LocalDate.now().getMonthValue(), LocalDate.now().getDayOfMonth());
     }
 }

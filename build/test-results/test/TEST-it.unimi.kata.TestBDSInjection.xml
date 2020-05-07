@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="it.unimi.kata.TestBDSInjection" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-06T17:12:47" hostname="sofia-Lenovo-Z50-70" time="0.678">
+<testsuite name="it.unimi.kata.TestBDSInjection" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-07T10:57:45" hostname="sofia-Lenovo-Z50-70" time="0.724">
   <properties/>
-  <testcase name="simpleTestEmployeeRep()" classname="it.unimi.kata.TestBDSInjection" time="0.588"/>
-  <testcase name="simpleBDSTest()" classname="it.unimi.kata.TestBDSInjection" time="0.081"/>
-  <testcase name="simpleTestEmailService()" classname="it.unimi.kata.TestBDSInjection" time="0.007"/>
+  <testcase name="simpleTestEmployeeRep()" classname="it.unimi.kata.TestBDSInjection" time="0.621"/>
+  <testcase name="simpleBDSTest()" classname="it.unimi.kata.TestBDSInjection" time="0.095"/>
+  <testcase name="simpleTestEmailService()" classname="it.unimi.kata.TestBDSInjection" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

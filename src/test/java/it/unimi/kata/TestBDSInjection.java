@@ -26,16 +26,10 @@ public class TestBDSInjection {
     @BeforeEach
     public void setUp(){
         emp = mock(EmployeeRepository.class);
-        createRep(emp);
+//        createRep(emp);
         ems = mock(EmailService.class);
-        createEmailService(ems);
-        Injector inj = Guice.createInjector(new BDSModule() {
-            @Override
-            protected void configure() {
-                bind(EmployeeRepository.class).toInstance(emp);
-                bind(EmailService.class).toInstance(ems);
-            }
-        });
+//        createEmailService(ems);
+        Injector inj = Guice.createInjector(new BDSModule(emp, ems));
         bds = inj.getInstance(BirthdayServiceImpl.class);
     }
 
@@ -60,26 +54,26 @@ public class TestBDSInjection {
 
     }
 
-    void createRep(EmployeeRepository er){
-        when(er.findEmployeesBornOn(12, 29))
-                .thenReturn(Arrays.asList(
-                        new EmployeeImpl(
-                                "Mario", "Bros", LocalDate.parse("1996-12-29"),"mario.bros@mail.it"),
-                        new EmployeeImpl(
-                                "Luigi", "Bros", LocalDate.parse("1996-12-29"),"luigi.bros@mail.it")
-                ));
-
-        when(er.findEmployeesBornOn(12, 3))
-                .thenReturn(Arrays.asList(
-                        new EmployeeImpl(
-                                "Peach", "ToadStool", LocalDate.parse("1994-12-03"),"peach.toadStool@mail.it"),
-                        new EmployeeImpl(
-                                "Daisy", "ToadStool", LocalDate.parse("1996-12-03"),"daisy.toadStool@mail.it")
-                ));
-    }
-
-    void createEmailService(EmailService es){
-        when(es.getObject()).thenReturn(object);
-        when(es.getText()).thenReturn(text);
-    }
+//    void createRep(EmployeeRepository er){
+//        when(er.findEmployeesBornOn(12, 29))
+//                .thenReturn(Arrays.asList(
+//                        new EmployeeImpl(
+//                                "Mario", "Bros", LocalDate.parse("1996-12-29"),"mario.bros@mail.it"),
+//                        new EmployeeImpl(
+//                                "Luigi", "Bros", LocalDate.parse("1996-12-29"),"luigi.bros@mail.it")
+//                ));
+//
+//        when(er.findEmployeesBornOn(12, 3))
+//                .thenReturn(Arrays.asList(
+//                        new EmployeeImpl(
+//                                "Peach", "ToadStool", LocalDate.parse("1994-12-03"),"peach.toadStool@mail.it"),
+//                        new EmployeeImpl(
+//                                "Daisy", "ToadStool", LocalDate.parse("1996-12-03"),"daisy.toadStool@mail.it")
+//                ));
+//    }
+//
+//    void createEmailService(EmailService es){
+//        when(es.getObject()).thenReturn(object);
+//        when(es.getText()).thenReturn(text);
+//    }
 }
