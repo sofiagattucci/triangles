@@ -13,13 +13,13 @@ repositories {
     maven {
         url "https://jitpack.io"
         credentials {
-            username "jp_cfbtoslbdr50e4pp4hljlsfohu"
+            username authToken
         }
     }
 }
 
 dependencies {
-    //testImplementation 'it.unimi.di.vec:extensions:1.0'
+    testImplementation 'it.unimi.di.vec:extensions:1.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.0'
 

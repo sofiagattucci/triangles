@@ -14,7 +14,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-// @ExtendWith(OddTest.class)
+@ExtendWith(OddTest.class)
 public class TestTriangle {
   ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
   InputStream backupInputStream = System.in;

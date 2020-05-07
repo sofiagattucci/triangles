@@ -25,10 +25,12 @@ test:
     expire_in: 1 week
   script:
     - gradle test jacocoTestReport
-#    - gradle publishToMavenLocal
+    - cat build/reports/jacoco/test/html/index.html
+  #    - gradle publishToMavenLocal
   cache:
     key: "$CI_COMMIT_REF_NAME"
     policy: pull
     paths:
       - build
       - .gradle
+  coverage: '/^    - Branch Coverage: (\d+\.\d+)%/'
