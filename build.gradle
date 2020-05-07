@@ -3,7 +3,7 @@ plugins {
     id "maven-publish"
 }
 
-group = 'com.github.sofiagatt'
+group = 'it.unimi.di.vec'
 version = '1.0'
 
 publishing {
