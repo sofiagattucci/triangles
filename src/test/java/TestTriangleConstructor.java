@@ -5,10 +5,14 @@ import it.unimi.di.vec.ass1.TriangleImpl;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.InputMismatchException;
+
+import it.unimi.di.vec.extensions.OddExecExtension;
 import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+@ExtendWith(OddExecExtension.class)
 public class TestTriangleConstructor {
 
   @Tag("TestTagged")
