@@ -2,6 +2,7 @@ image: gradle:jdk11
 
 before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
+  - echo "$authToken"
 
 build:
   stage: build
