@@ -7,16 +7,19 @@ plugins {
 testSets {
     integrationTest
 }
-repositories {
-    mavenLocal()
-    mavenCentral()
-    maven {
-        url "https://jitpack.io"
-        credentials {
-            username authToken
+allprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url "https://jitpack.io"
+            credentials {
+                username authToken
+            }
         }
     }
 }
+
 
 dependencies {
     testImplementation 'it.unimi.di.vec:extensions:1.0'
