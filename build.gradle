@@ -20,6 +20,12 @@ allprojects {
     }
 }
 
+task printProps {
+    doFirst {
+        println authToken
+    }
+}
+
 
 dependencies {
     testImplementation 'it.unimi.di.vec:extensions:1.0'
