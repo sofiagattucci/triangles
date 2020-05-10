@@ -4,32 +4,25 @@ plugins {
     id 'org.unbroken-dome.test-sets' version '2.2.1'
     id 'jacoco'
 }
-//testSets {
-//    integrationTest
-//}
+testSets {
+    integrationTest
+}
 allprojects {
     repositories {
-        mavenLocal()
         mavenCentral()
         maven {
-            url "https://jitpack.io"
-//            credentials {
-//                username authToken
-//                //password authToken
-//            }
+            url = uri("https://maven.pkg.github.com/carlobellettini/verificaEconvalida")
+            credentials {
+                username  'dummy'
+                password  'b44972ef2132326abe8bd30c22d27034555ccbf1'
+            }
         }
     }
 }
 
-task printProps {
-    doFirst {
-        println authToken
-    }
-}
-
-
 dependencies {
 //    testImplementation 'it.unimi.di.vec:extensions:1.0'
+    testImplementation 'it.unimi.di.vec:vec-extensions:1.4'
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.0'
 
@@ -40,8 +33,14 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
 
-    testImplementation 'com.gitlab.verificaeconvalida:VecExtensions:1.3'
+//    testImplementation 'com.gitlab.verificaeconvalida:VecExtensions:1.3'
 //    testImplementation 'com.gitlab.sofiagattucci:triangles:assignment5-SNAPSHOT'
+}
+
+task printProps {
+    doFirst {
+        println authToken
+    }
 }
 
 test {
@@ -58,23 +57,8 @@ test {
     }
 }
 
-//def printJacocoCoverage(String xpath) {
-//    def jacocoCoverage = new ByteArrayOutputStream()
-//    exec {
-//        commandLine '-html','-xpath', "//tfoot//td["+xpath+"]/text()", 'build/reports/jacoco/test/html/index.html/index.html'
-//        standardOutput = jacocoCoverage
-//        ignoreExitValue true
-//    }
-//    return jacocoCoverage.toString()
-//}
 jacocoTestReport {
-//    doLast {
-//        print "INSTRUCTIONS: " + printJacocoCoverage("3")
-//        println " BRANCHES: " + printJacocoCoverage("5")
-//    }
     reports {
-//        xml.enabled false
-//        csv.enabled false
         html.destination file("build/jacocoHtml")
     }
 }

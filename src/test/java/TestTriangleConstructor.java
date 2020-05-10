@@ -2,18 +2,13 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.Assert.*;
 
 import it.unimi.di.vec.ass1.TriangleImpl;
-//import it.unimi.di.vec.extensions.OddExecExtension;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.InputMismatchException;
-
-
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-//@ExtendWith(OddExecExtension.class)
 public class TestTriangleConstructor {
 
   @Tag("TestTagged")
