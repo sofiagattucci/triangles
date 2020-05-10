@@ -15,6 +15,7 @@ allprojects {
             url "https://jitpack.io"
             credentials {
                 username authToken
+                //password authToken
             }
         }
     }
