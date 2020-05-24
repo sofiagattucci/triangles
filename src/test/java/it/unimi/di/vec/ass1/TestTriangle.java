@@ -1,20 +1,18 @@
+package it.unimi.di.vec.ass1;
+
 import static org.assertj.core.api.Assertions.*;
 
-import it.unimi.di.vec.ass1.TriangleImpl;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
-import org.junit.Rule;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-@ExtendWith(OddTest.class)
 public class TestTriangle {
   ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
   InputStream backupInputStream = System.in;
@@ -24,7 +22,6 @@ public class TestTriangle {
     System.setOut(new PrintStream(outputStream));
   }
 
-  @ExtendWith(MethodDescriptionExt.class)
   @ParameterizedTest
   @ValueSource(strings = {"3 5 5", "3 5 3", "3 3 5"})
   public void isIsosceles(String value) {
@@ -33,7 +30,6 @@ public class TestTriangle {
     assertThat(outputStream.toString()).as(value).isEqualTo("isosceles");
   }
 
-  @Rule public InfoAboutTest iat = new InfoAboutTest();
 
   @Tag("TestTagged")
   @Test
