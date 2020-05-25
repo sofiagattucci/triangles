@@ -1,7 +1,7 @@
 {
   "formatVersion": "1.1",
   "component": {
-    "group": "com.github.sofiagatt",
+    "group": "it.unimi.di.vec",
     "module": "extensions",
     "version": "1.0",
     "attributes": {
@@ -11,7 +11,7 @@
   "createdBy": {
     "gradle": {
       "version": "6.1",
-      "buildId": "pegpmhdrz5cini4pyexe2lrrum"
+      "buildId": "gxoiau4tlrbwjealrmbmghb5yu"
     }
   },
   "variants": [
@@ -28,11 +28,11 @@
         {
           "name": "extensions-1.0.jar",
           "url": "extensions-1.0.jar",
-          "size": 7980,
-          "sha512": "6ac26a7309e0267b8243ebd00096395e3331c9d0bccf25956c7b840a8806b23c3f21575344e316cdb165c1a3a15025343a16353edb964ef5fb992526f1ef1028",
-          "sha256": "e1224554375d8e7dd90854cb90af6c823fdf2331636f97a671274873e00c7b00",
-          "sha1": "53a7af4fe09444a44e796f73bce08e2d345b496b",
-          "md5": "7ea30372f845990d7a9cfe5121a57052"
+          "size": 7518,
+          "sha512": "aee65f38264f0b577d85b83160f10502ba2bc846a8e15af46aae0c9c2e5c0990172bb40f8225fcea07da3c5135535837a7ecff5704921678758d6004fb100f61",
+          "sha256": "3920adf01939ae2332dced393f15e5f30fa93dc2d2041c2b9ace9783128e2bea",
+          "sha1": "d9b6667e5a63db5ca1f7692b7dea87c79324c3c7",
+          "md5": "d74b8e62f47cc56782adc44e6e00c09c"
         }
       ]
     },
@@ -59,17 +59,24 @@
           "version": {
             "requires": "3.15.0"
           }
+        },
+        {
+          "group": "junit",
+          "module": "junit",
+          "version": {
+            "requires": "4.13"
+          }
         }
       ],
       "files": [
         {
           "name": "extensions-1.0.jar",
           "url": "extensions-1.0.jar",
-          "size": 7980,
-          "sha512": "6ac26a7309e0267b8243ebd00096395e3331c9d0bccf25956c7b840a8806b23c3f21575344e316cdb165c1a3a15025343a16353edb964ef5fb992526f1ef1028",
-          "sha256": "e1224554375d8e7dd90854cb90af6c823fdf2331636f97a671274873e00c7b00",
-          "sha1": "53a7af4fe09444a44e796f73bce08e2d345b496b",
-          "md5": "7ea30372f845990d7a9cfe5121a57052"
+          "size": 7518,
+          "sha512": "aee65f38264f0b577d85b83160f10502ba2bc846a8e15af46aae0c9c2e5c0990172bb40f8225fcea07da3c5135535837a7ecff5704921678758d6004fb100f61",
+          "sha256": "3920adf01939ae2332dced393f15e5f30fa93dc2d2041c2b9ace9783128e2bea",
+          "sha1": "d9b6667e5a63db5ca1f7692b7dea87c79324c3c7",
+          "md5": "d74b8e62f47cc56782adc44e6e00c09c"
         }
       ]
     }

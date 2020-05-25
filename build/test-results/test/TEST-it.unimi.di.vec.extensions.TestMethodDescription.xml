@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.di.vec.extensions.TestMethodDescription" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-05-25T06:36:51" hostname="sofia-Lenovo-Z50-70" time="0.008">
+  <properties/>
+  <testcase name="notNullTest()" classname="it.unimi.di.vec.extensions.TestMethodDescription" time="0.006"/>
+  <testcase name="simpleTest()" classname="it.unimi.di.vec.extensions.TestMethodDescription" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

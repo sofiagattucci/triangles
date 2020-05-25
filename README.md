@@ -14,3 +14,8 @@ Aggiunti altri casi di test rispetto alla versione precedente.
 
 # Pubblicazione estensioni
 Pubblicate le estensioni su MavenLocal.
+
+# Aggiunta estensione
+Aggiunta estensione per stampare la descrizione del metodo (che come prima versione era stata fatta direttamente nel branch con i triangoli)
+e brevemente testata.
+Pubblicato il tutto.
