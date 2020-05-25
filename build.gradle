@@ -1,42 +1,34 @@
 plugins {
     id 'java'
-    id "com.diffplug.gradle.spotless" version "3.27.2"
-    id 'org.unbroken-dome.test-sets' version '2.2.1'
     id 'jacoco'
+    id "com.diffplug.gradle.spotless" version "3.27.2"
+    id "org.unbroken-dome.test-sets" version "3.0.1"
+    id "com.github.spacialcircumstances.gradle-cucumber-reporting" version "0.1.20"
 }
 testSets {
-    integrationTest
+    cucumberTest
 }
-allprojects {
-    repositories {
-        mavenCentral()
-        maven {
-            url = uri("https://maven.pkg.github.com/carlobellettini/verificaEconvalida")
-            credentials {
-                username  'dummy'
-                password  'b44972ef2132326abe8bd30c22d27034555ccbf1'
-            }
-        }
-    }
+
+cucumberReports {
+    outputDir = file('build/reports/cucumberTest/html')
+    buildId = 1
+    reports = files('build/reports/cucumberTest/cucumber.json')
 }
+
+repositories {
+    mavenCentral()
+}
+
 
 dependencies {
-    testImplementation 'it.unimi.di.vec:vec-extensions:1.4'
-
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.0'
-
     testImplementation 'junit:junit:4.13'
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.6.0'
-
     testImplementation 'org.assertj:assertj-core:3.15.0'
-
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.6.0'
-}
 
-task printProps {
-    doFirst {
-        println authToken
-    }
+    cucumberTestImplementation "io.cucumber:cucumber-java:5.6.0"
+    cucumberTestImplementation "io.cucumber:cucumber-junit-platform-engine:5.6.0"
 }
 
 test {
@@ -46,11 +38,16 @@ test {
         //includeTestsMatching "*Integer"
     }
     useJUnitPlatform{
-        //includeTags "TestTagged"
     }
     testLogging {
         events "passed", "skipped", "failed"
     }
+}
+cucumberTest {
+    useJUnitPlatform {}
+    systemProperties = [
+            'cucumber.plugin': 'pretty,json:build/reports/cucumberTest/cucumber.json'
+    ]
 }
 
 jacocoTestReport {

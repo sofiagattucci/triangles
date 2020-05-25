@@ -30,7 +30,6 @@ public class TestTriangle {
     assertThat(outputStream.toString()).as(value).isEqualTo("isosceles");
   }
 
-
   @Tag("TestTagged")
   @Test
   public void isScalene() {
