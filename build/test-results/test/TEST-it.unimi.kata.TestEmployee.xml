@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="it.unimi.kata.TestEmployee" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-05-26T07:06:06" hostname="sofia-Lenovo-Z50-70" time="0.115">
+  <properties/>
+  <testcase name="simpleEmployeeTest()" classname="it.unimi.kata.TestEmployee" time="0.037"/>
+  <testcase name="nameTest(String)[1]" classname="it.unimi.kata.TestEmployee" time="0.03"/>
+  <testcase name="nameTest(String)[2]" classname="it.unimi.kata.TestEmployee" time="0.002"/>
+  <testcase name="nameTest(String)[3]" classname="it.unimi.kata.TestEmployee" time="0.003"/>
+  <testcase name="nameTest(String)[4]" classname="it.unimi.kata.TestEmployee" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

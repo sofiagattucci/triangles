@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public interface Employee {
 
-    String getName();
+  String getName();
 
-    String getSurname();
+  String getSurname();
 
-    LocalDate getBirthdayDate();
+  LocalDate getBirthdayDate();
 
-    String getEmail();
+  String getEmail();
 }

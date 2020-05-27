@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-27T14:58:41.461Z",
+        "line": 3,
+        "name": "selezione degli utenti che compiono gli anni oggi",
+        "description": "",
+        "id": "invio-mail-di-compleanno;selezione-degli-utenti-che-compiono-gli-anni-oggi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "i seguenti impiegati",
+            "match": {
+              "location": "cucumb.steps.FirstsStep.i_seguenti_impiegati(java.lang.String)"
+            },
+            "keyword": "Given ",
+            "doc_string": {
+              "line": 5,
+              "value": "Mario, Bros, 1996/12/29, mario.bros@mail.it\nLuigi, Bros, 1996/12/29, luigi.bros@mail.it\nDonkey, Kong, 1996/05/04, donkey.kong@mail.it\nBowser, Koopa, 1994/02/28, bowser.koopa@mail.it\nPeach, ToadStool, 1994/12/03, peach.toadstool@mail.it\nDaisy, ToadStool, 1994/12/03, daisy.toadstool@mail.it"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "oggi è il giorno 2020-12-03",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020-12-03",
+                  "offset": 17
+                }
+              ],
+              "location": "cucumb.steps.FirstsStep.oggi_è_il_giorno(java.time.LocalDate)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "chiedo a chi devo mandare la mail",
+            "match": {
+              "location": "cucumb.steps.FirstsStep.chiedo_a_chi_devo_mandare_la_mail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "ottengo la seguente lista:",
+            "match": {
+              "location": "cucumb.steps.FirstsStep.ottengo_la_seguente_lista(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Peach",
+                  "ToadStool",
+                  "1994/12/03",
+                  "peach.toadstool@mail.it"
+                ]
+              },
+              {
+                "cells": [
+                  "Daisy",
+                  "ToadStool",
+                  "1994/12/03",
+                  "daisy.toadstool@mail.it"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "invio mail di compleanno",
+    "description": "",
+    "id": "invio-mail-di-compleanno",
+    "keyword": "Feature",
+    "uri": "classpath:cucumb/kata.feature",
+    "tags": []
+  }
+]

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="it.unimi.kata.TestBirthDayService" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-06T09:37:16" hostname="sofia-Lenovo-Z50-70" time="0.672">
+<testsuite name="it.unimi.kata.TestBirthDayService" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-05-26T07:06:06" hostname="sofia-Lenovo-Z50-70" time="0.679">
   <properties/>
-  <testcase name="employeeTest()" classname="it.unimi.kata.TestBirthDayService" time="0.634"/>
-  <testcase name="emailServiceTest()" classname="it.unimi.kata.TestBirthDayService" time="0.013"/>
+  <testcase name="employeeTest()" classname="it.unimi.kata.TestBirthDayService" time="0.655"/>
+  <testcase name="emailServiceTest()" classname="it.unimi.kata.TestBirthDayService" time="0.006"/>
   <testcase name="leapYearOrNotTest()" classname="it.unimi.kata.TestBirthDayService" time="0.008"/>
-  <testcase name="employeeRepositoryTest()" classname="it.unimi.kata.TestBirthDayService" time="0.013"/>
+  <testcase name="employeeRepositoryTest()" classname="it.unimi.kata.TestBirthDayService" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,0 +1,6 @@
+
+]Scenario: selezione degli utenti che compiono gli anni oggi [90m# cucumb/kata.feature:3[0m
+˜  [32mGiven [0m[32mi seguenti impiegati[0m                                [90m# cucumb.steps.FirstsStep.i_seguenti_impiegati(java.lang.String)[0m
+¦  [32mAnd [0m[32moggi Ã¨ il giorno [0m[32m[1m2020-12-03[0m                           [90m# cucumb.steps.FirstsStep.oggi_Ã¨_il_giorno(java.time.LocalDate)[0m
+•  [32mWhen [0m[32mchiedo a chi devo mandare la mail[0m                    [90m# cucumb.steps.FirstsStep.chiedo_a_chi_devo_mandare_la_mail()[0m
+½  [32mThen [0m[32mottengo la seguente lista:[0m                           [90m# cucumb.steps.FirstsStep.ottengo_la_seguente_lista(java.util.List<java.util.List<java.lang.String>>)[0m

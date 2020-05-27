@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UnknownClass" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-27T14:58:41" hostname="sofia-Lenovo-Z50-70" time="0.215">
+  <properties/>
+  <testcase name="selezione degli utenti che compiono gli anni oggi" classname="UnknownClass" time="0.215"/>
+  <system-out><![CDATA[
+Scenario: selezione degli utenti che compiono gli anni oggi ?[90m# cucumb/kata.feature:3?[0m
+  ?[32mGiven ?[0m?[32mi seguenti impiegati?[0m                                ?[90m# cucumb.steps.FirstsStep.i_seguenti_impiegati(java.lang.String)?[0m
+  ?[32mAnd ?[0m?[32moggi è il giorno ?[0m?[32m?[1m2020-12-03?[0m                           ?[90m# cucumb.steps.FirstsStep.oggi_è_il_giorno(java.time.LocalDate)?[0m
+  ?[32mWhen ?[0m?[32mchiedo a chi devo mandare la mail?[0m                    ?[90m# cucumb.steps.FirstsStep.chiedo_a_chi_devo_mandare_la_mail()?[0m
+  ?[32mThen ?[0m?[32mottengo la seguente lista:?[0m                           ?[90m# cucumb.steps.FirstsStep.ottengo_la_seguente_lista(java.util.List<java.util.List<java.lang.String>>)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
